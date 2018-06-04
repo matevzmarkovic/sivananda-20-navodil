@@ -1,0 +1,58 @@
+%Copyright (C) 2015 Matevž Markovič (matevz.markovic@guest.arnes.si) [All rights reserved.]
+
+%http://texblog.org/2011/05/21/drop-caps-with-lettrine/
+%http://mirror.math.ku.edu/tex-archive/macros/latex/contrib/lettrine/doc/lettrine.pdf
+\vspace{5mm}
+%\lettrine[nindent=0em,lines=1]{S}{ledeči} stavek se mora vleči skozi več vrtic, sicer bo problem, saj bo sicer problem, ker bo prekrivanje, pa bo potem štala, in bodo vsi jezni, nekateri pa še bolj, zato bolje da gre skozi več vrstic, in bom zadovoljen.
+
+%\section{Uvod}
+%\lipsum[2]
+
+
+%1.1 - change in the quote frame
+%[background=color,backgroundcolor=gray] ; http://wiki.contextgarden.net/Framed
+%\definecolor{shadecolor}{gray}{0.8}
+%\begin{centering}
+%    %\begin{framed}
+%        \begin{quote}
+%        \emph{``I haven't lost my mind; I have a tape back-up somewhere.''}
+%
+%        \begin{flushright}
+%        --- Author Unknown
+%        \end{flushright}
+%        
+%        \end{quote}
+%    %\end{framed}
+%\end{centering}
+
+%Predloga 1.2 dodatek
+%---------------------
+%\metaPisava{Komentar vsebine se začne tu\ldots \emph{žđžćč}\lipsum[1] To če biti to! \ldots tu pa se konča komentar vsebine.}
+%---------------------
+
+%\lipsum[3]
+
+%\section{Odvod}
+
+%\lipsum
+
+\section*{Licenca}
+\label{sec:licenca}
+To delo je ponujeno pod licenco Creative Commons Priznanje avtorstva 2.5 Slovenija (ali novejšo različico). 
+To pomeni, da se tako besedilo, slike, grafi in druge sestavine dela kot tudi delo samo lahko prosto distribuirajo, reproducirajo, uporabljajo, priobčujejo javnosti in predelujejo, pod pogojem, da se jasno in vidno navede izvornega avtorja in izvorni naslov tega dela, ter jasno in nedvoumno naznači ali je bilo delo kakorkoli spremenjeno. To se lahko stori na kakršenkoli moralno sprejemljiv način, v kolikor le-ta ne nakazuje na kakršenkoli način, da se nosilec licence tega dela strinja s spremenjenim delom. Uporaba kakršnihkoli legalnih ali tehničnih načinov omejevanja ostalih pri realizaciji česarkoli ta licenca dovoljuje ni dovoljenja.
+Podrobnosti licence so dostopne na spletni strani \url{http://creativecommons.si} ali na Inštitutu za intelektualno lastnino, Streliška 1, 1000 Ljubljana.
+
+%Obstajajo izjeme?
+
+\section*{Izvor znanja}
+\label{sec:izvor_znanja}
+Znanje o Prologu je bilo povzeto s spletnih strani projektov Wikipedija~\cite{wiki:prolog_de} ter Wikibooks~\cite{wiki:prolog_book} neprofitne fundacije Wikimedia Foundation. Uporabil sem tudi znanje, pridobljeno pri predmetih Umetna inteligenca ter Principi programskih jezikov s Fakultete za računalništvo in informatiko v Ljubljani v letih 2011 -- 2013, kjer je bil predavatelj Ivan Bratko (\url{http://www.fri.uni-lj.si/ivan-bratko}).
+
+\section{Zamisel}
+\label{sec:zamisel}
+
+\section{Znanje v surovi obliki}
+\label{sec:znanje_v_surovi_obliki}
+
+\section{Zgodba}
+\label{sec:zgodba}

@@ -1,0 +1,177 @@
+%Copyright (C) 2018 Matevž Markovič (matevz.markovic.v@gmail.com) [All rights reserved]
+
+\def \MalnetoClanekTemplateVersion{1.21}
+
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+
+%Project
+%\def \projekt{Knjiga totaal}
+%\def \projektK{KT}
+\def \projektKb{MM}
+
+%Title
+\def \naslov{Dvajset pomembnih spiritualnih navodil}
+
+%Month year
+\def \monthYear{April 2018}
+\def \year{2018}
+
+%ID within the project
+\def \MalnetoID{11}
+\def \MMid{101}
+
+%Build version
+\def \buildversion{1}
+
+%ID of the work, prefixed by "KT_", preferably numerical (for example, RID_4.3)
+%To gre na zadnjo stran k tehničnim podatkom!
+\def \IDworkMalneto{\projektKa\_\MalnetoID$.$\buildversion}         	%***********Unique!!!*************
+\def \IDworkMM{\projektKb\_\MMid$.$\buildversion}
+
+%Author of the work
+\def \avtor{Matev\v{z} Markovi\v{c}}
+\def \avtorEmail{\href{mailto:matevz.markovic.v@gmail.com}{matevz.markovic.v@gmail.com}}
+
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+
+\documentclass[12pt,a4paper]{article}
+
+%Import the settings
+\input{./settings/parameters.tex}
+
+%--------------------------------------------------------------------------------------------
+%	FANCY HEADER SETTINGS SECTION
+%--------------------------------------------------------------------------------------------
+\fancypagestyle{plain}
+{
+    \fancyhead{} % Blank out the default header
+    \fancyfoot{} % Blank out the default footer
+    %\fancyhead[C]{\naslov $\bullet$ Project \projektK $\bullet$ May 2015} % Custom header text
+    %\fancyhead[L]{\textbf{\naslov} $\subseteq$ \textbf{Projekt \projektK}}
+    \fancyhead[L]{\textbf{\naslov} (\projektKb)}
+    \fancyhead[R]{\monthYear}
+    
+    %1.1 template - change (spaces ';')
+    \fancyfoot[L]{\copyright\ \year\  \avtor\ (all rights reserved)}
+    \fancyfoot[R]{\thepage} % Custom footer text
+}
+\pagestyle{plain}
+%---------------------------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------------------------
+%	TITLE SECTION
+%--------------------------------------------------------------------------------------------
+\title{
+	\vspace{-15mm}
+	%\Large \emph{Project \projekt} \\[2mm]
+    %\Large \emph{\projektKb \ article} \\[2mm]
+	\fontsize{24pt}{10pt}\textbf{\naslov}	%\\
+	%\large ID: \IDwork	\\	
+}
+
+\author{
+\large
+\textsc{\avtor}\thanks{Lahko mi pišete na naslov \avtorEmail.}
+%\vspace{-5mm}
+}
+\date{}
+%---------------------------------------------------------------------------------------------
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%+++++++++++++++++++++++++Start of document++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{document}
+
+\maketitle % Insert title
+\thispagestyle{fancy} % All pages have headers and footers
+
+\begin{abstract}
+%	%\noindent \lipsum[1] % Dummy abstract text
+    \noindent Ta dokument je prevod serije govorov Dvajset pomembnih spiritualnih navodil Sri Swami Sivanande.
+\end{abstract}
+
+%>>> http://tex.stackexchange.com/questions/227636/package-fancyhdr-warning-headheight-is-too-small-41-6pt
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\tableofcontents
+
+
+%++++++++++++++++++++++++++++++++
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%\part{Confronting_the_fear}
+%\label{part:confronting_the_fear}
+%\chapter{Confronting the fear}
+%\input{./text/confronting_the_fear.tex}
+%*+++++++++++++++++++++++++++++++
+
+%%++++++++++++++++++++++++++++++++
+%\input{./text/text.tex}
+\input{./text/ogrodje.tex}
+%%++++++++++++++++++++++++++++++++
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+%\bibliography{matevz_markovic_tango_practice_bibliography}
+%\bibliographystyle{plain}
+
+%\cite{*} odstrani to!
+
+%\definecolor{shadecolor}{rgb}{0.64,0.87,0.93}  %http://latexcolor.com/ ; Non-photo blue
+%\begin{shaded}
+%http://tex.stackexchange.com/questions/66154/how-to-construct-a-coloured-box-with-rounded-corners
+
+\vspace{5mm}
+\newtcolorbox{metaPodatki}[1]{fonttitle=\bfseries,title=#1}
+\begin{metaPodatki}{Metadata}
+%
+%Namen mojih člankov je vaja veščine pisanja ter vzpodbujanje razmišljanja, saj najraje razmišljam prav ob pisanju. Vsakemu mojemu članku pripada enoličen niz znakov, preko katerega se nanj lahko sklicujemo. %// Dom mojih člankov je spletna stran \emph{\spletnaStran}.\\
+%
+
+Technical data about this article:
+%1.1 template - change ('label={}'); add package 'enumitem' to parameters.tex
+\begin{itemize}[label={}]
+    \item it can be as a general (MM) article uniquely identified by the string \emph{\IDworkMM}, where \emph{\MMid} is the identification number of the article and \emph{\buildversion} version of the article;
+    \item last compiled on \today;
+    \item written upon the template version \emph{\MalnetoClanekTemplateVersion}.
+\end{itemize}
+
+\end{metaPodatki}
+
+\end{document} 
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%+++++++++++++++++++++++++++End of document++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+%+++++++++++++++++++ INSTRUCTIONS +++++++++++++++++++++++
+%pdflatex -output-directory ./latex_output sample2.tex
+
+%%Compilation sequence (bibtex):
+
+%0.From the root directory
+%1.  pdflatex -output-directory ./latex_output 20navodil.tex
+%2.  bibtex latex_output/20navodil.aux
+%3.  pdflatex -output-directory ./latex_output 20navodil.tex
+%4.  pdflatex -output-directory ./latex_output 20navodil.tex
+
+%Artha offline dictionary would be excellent... and indeed it is
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+%Bibtex
+%@Misc{MMclanek,
+%    author = 	 {Matevž Markovič},
+%    title = 	 {clanek},
+%    howpublished = {Članek je na voljo preko naslova \url{http://www2.arnes.si/~mmarko7}},
+%    month = 	 {Avgust},
+%    year = 	 {2015},
+%    note = 	 {ID članka je \emph{MM_1$.$11}}
+%}
+%

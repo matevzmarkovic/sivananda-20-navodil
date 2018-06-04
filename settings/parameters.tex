@@ -1,0 +1,117 @@
+%Copyright (C) 2015 Matevž Markovič (matevz.markovic@guest.arnes.si). All rights reserved.
+
+%Parameters
+
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage[slovene]{babel} 			%V Slovenščini?
+
+%Za v RID-TP \usepackage[english,slovene]{babel}
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[pdftex,colorlinks,citecolor=black,filecolor=black,linkcolor=black,urlcolor=black,pagebackref]{hyperref}
+\usepackage{enumerate}
+\usepackage{framed}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{fancyhdr}                       %noge in glave
+\usepackage{lipsum}                         %random tekst
+\usepackage[usenames,dvipsnames]{color}     %Za barve (https://en.wikibooks.org/wiki/LaTeX/Colors)
+
+%\usepackage{fullpage}
+\usepackage{placeins}
+\usepackage{array}
+\usepackage{multirow}
+
+%Parametri dokumenta (po predlogi diplomske na FRI) - NE UPOŠTEVAJ!
+%\oddsidemargin 1.4cm
+%\evensidemargin 0.35cm
+%\textwidth 14cm
+%\topmargin 0.26cm
+%\headheight 0.6cm
+%\headsep 1.5cm
+%\textheight 20cm
+
+
+%https://en.wikibooks.org/wiki/LaTeX/Page_Layout
+%\setlength{\topmargin}{-.5in}
+%\setlength{\textheight}{9in}
+%\setlength{\oddsidemargin}{.125in}
+%\setlength{\textwidth}{6.25in}
+\usepackage{a4wide}
+
+%Theorems
+\theoremstyle{definition}
+\newtheorem{Definition}{Definition}
+\newtheorem{Axiom}{Axiom}
+\theoremstyle{plain}
+\newtheorem{Theorem}{Theorem}
+%A proposition is a generic term for a theorem of no particular importance.
+\newtheorem{Proposition}{Proposition}
+%A lemma is a "helping theorem", a proposition with little applicability except that it forms part of the proof of a larger theorem.
+\newtheorem{Lemma}{Lemma}        
+%A corollary is a proposition that follows with little or no proof from one other theorem or definition.                
+\newtheorem{Corollary}{Corollary}
+\newtheorem{Proof}{Proof}
+\theoremstyle{remark}
+\newtheorem{Remark}{Remark}
+\newtheorem{Idea}{Idea}
+
+%
+\hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
+
+%Iz template-a za ZZRS
+% fixed width column with centering (  ex. C{2cm}  )
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% table row padding
+\renewcommand{\arraystretch}{1.5}
+
+% enumerate subsubsections and include them in TOC
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%+++++       CHANGES IN THE RID+ PROJECT         ++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+%Define the abstract page
+\newenvironment{abstractpage}
+  {\cleardoublepage\vspace*{\fill}\thispagestyle{empty}}
+  {\vfill\cleardoublepage}
+\renewenvironment{abstract}[1]
+  {\bigskip\selectlanguage{#1}%
+   \begin{center}\bfseries\abstractname\end{center}}
+  {\par\bigskip}
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+%\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{tcolorbox}
+
+%1.1 slo changes
+\usepackage{enumitem}
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++
+%+++++  CHANGES IN THE KNJIGA TOTAAL PROJECT    ++++++
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++
+\usepackage{wrapfig}
+
+%Predloga 1.2 dodatek
+%---------------------
+
+%http://tex.stackexchange.com/questions/25249/how-do-i-use-a-particular-font-for-a-small-section-of-text-in-my-document
+\newenvironment{mPisava}{\fontfamily{pzc}\selectfont\color{blue}}{\par}
+\DeclareTextFontCommand{\metaPisava}{\mPisava}
+%Sprejemljive pisave --> ccr, phv, pnc, ppl, ptm, put, pzc (pisanja, privzeta)
+%---------------------
+
+\usepackage{xcolor}
