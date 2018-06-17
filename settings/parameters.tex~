@@ -2,11 +2,19 @@
 
 %Parameters
 
+\usepackage{verse}
+\newcommand{\attrib}[1]{%
+\nopagebreak{\raggedleft\footnotesize #1\par}}
+\renewcommand{\poemtitlefont}{\normalfont\large\itshape\centering}
+
+%-----------------------
+
 \usepackage{url}
-\usepackage[utf8]{inputenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{amsthm}
 \usepackage{amsmath}
-%\usepackage[slovene]{babel} 			%V Slovenščini?
+\usepackage[slovene]{babel} 			%V Slovenščini?
 
 %Za v RID-TP \usepackage[english,slovene]{babel}
 
@@ -114,3 +122,4 @@
 %---------------------
 
 \usepackage{xcolor}
+

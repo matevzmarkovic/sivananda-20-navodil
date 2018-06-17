@@ -39,12 +39,10 @@
 %Invoke me with \GTtechnique{}
 %\newcommand{\AlfaGibanje}{$\hat{\alpha}$-gibanje}
 
-\newline
-
 \section*{Opombe k prevodu}
 Prevodi terminov iz Sanskrita so bili povzeti iz Malega slovarja azijskih filozofij Maje Milčinski, izdanega s strani Filozofskega inštituta ZRC SAZU leta 2003 v Ljubljani.
 
 \emph{Om Namo Bhagavate Šivanandaya!}
 
-\section*{Predgovor}
 \input{./text/predgovor.tex}
+\input{./text/univerzalna_molitev.tex}
